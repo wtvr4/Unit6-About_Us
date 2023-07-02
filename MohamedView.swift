@@ -3,7 +3,7 @@ import SwiftUI
 struct MohamedView: View {
     var body: some View {
         ZStack {
-            Color("Mohd's Colors")
+            Color("m1")
                 .ignoresSafeArea()
             
             VStack(spacing: 20) {
@@ -11,48 +11,82 @@ struct MohamedView: View {
                     .multilineTextAlignment(.center)
                     .bold()
                     .font(.title)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("m2"))
                     .padding(.top)
                 
                 Image("cookie")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 120, height: 120)
-                    .padding(.top, 40)
                 
-                HStack{
-                    Text("About me : \n- I enjoy coding \n- I read \n- A lot of free time \n   but always busy")
-                        .multilineTextAlignment(.leading)
-                        .bold()
-                        .font(.system(size: 27))
-                        .foregroundColor(.white)
-                        .padding([.top, .leading], 29)
+                ZStack {
+                    Rectangle()
+                        .frame(width: 350, height: 350)
+                        .cornerRadius(20)
+                        .foregroundColor(Color("m4"))
+                        .offset(y : -50)
+                    
+                    HStack {
+                        VStack (alignment: .leading, spacing: 0) {
+                            Text("About me :")
+                                .font(
+                                    .system(.title)
+                                    .weight(.bold)
+                                )
+                                .foregroundColor(Color("m1"))
+                                .padding(.leading)
+                                .padding(.bottom)
+                            
+                            Text("  -I enjoy coding and exploring new \n    things related to it.")
+                                .font(.title2)
+                                .padding(.vertical, 10)
+                                .foregroundColor(Color("m2"))
+                                .bold()
+                            
+                            Text("  -Anything tech related has been\n    in my interest since a young age.")
+                                .font(.title2)
+                                .padding(.vertical, 10)
+                                .foregroundColor(Color("m2"))
+                                .bold()
+                            
+                            Text("  -I enjoy most sports but mostly \n    football and volleyball.")
+                                .font(.title2)
+                                .padding(.vertical, 10)
+                                .foregroundColor(Color("m2"))
+                                .bold()
+                            
+                            Text("  - I like reading")
+                                .font(.title2)
+                                .padding(.vertical, 10)
+                                .foregroundColor(Color("m2"))
+                                .bold()
+                            
+                            Spacer()
+                            Link(destination: URL(string: "https://github.com/wtvr4")!, label: {
+                                Rectangle()
+                                    .foregroundColor(Color("m2"))
+                                    .frame(width: 300, height: 100)
+                                    .mask(
+                                        Image("gitgit")
+                                            .resizable()
+                                            .scaledToFit()
+                                    )
+                            })
+                        }}
+                    
                     Spacer()
+                    
+
+                    
                 }
-                
-                Spacer()
-                
-                Button(action: {
-                    if let url = URL(string: "https://github.com/wtvr4") {
-                        UIApplication.shared.open(url)
-                    }
-                }) {
-                    Image("gitgit")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 400, height: 70)
-                        .padding(.horizontal)
-                        .offset(x: -5)
-                }
-                
+                .padding()
             }
-            .padding()
         }
     }
-}
-
-struct MohamedView_Previews: PreviewProvider {
-    static var previews: some View {
-        MohamedView()
+    
+    struct MohamedView_Previews: PreviewProvider {
+        static var previews: some View {
+            MohamedView()
+        }
     }
 }
