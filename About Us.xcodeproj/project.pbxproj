@@ -41,6 +41,9 @@
 		D9B51BDC2A51A722000F2BB1 = {
 			isa = PBXGroup;
 			children = (
+				D9B51BF82A51A829000F2BB1 /* FarisView.swift */,
+				D9B51BF62A51A7EF000F2BB1 /* MohamedView.swift */,
+				D9B51BFA2A51A85B000F2BB1 /* OmarView.swift */,
 				D9B51BE72A51A722000F2BB1 /* About Us */,
 				D9B51BE62A51A722000F2BB1 /* Products */,
 			);
@@ -57,9 +60,6 @@
 		D9B51BE72A51A722000F2BB1 /* About Us */ = {
 			isa = PBXGroup;
 			children = (
-				D9B51BF82A51A829000F2BB1 /* FarisView.swift */,
-				D9B51BF62A51A7EF000F2BB1 /* MohamedView.swift */,
-				D9B51BFA2A51A85B000F2BB1 /* OmarView.swift */,
 				D9B51BE82A51A722000F2BB1 /* About_UsApp.swift */,
 				D9B51BEA2A51A722000F2BB1 /* ContentView.swift */,
 				D9B51BEC2A51A724000F2BB1 /* Assets.xcassets */,
