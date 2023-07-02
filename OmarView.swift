@@ -3,7 +3,7 @@ import SwiftUI
 struct OmarView: View {
     var body: some View {
         ZStack {
-            Color(red: 57/255, green: 80/255, blue: 82/255)
+            Color(.brown)
                 .ignoresSafeArea()
             
             VStack(spacing: 20) {
