@@ -37,18 +37,20 @@ struct FarisView: View {
                                 )
                                 .padding(.top, 30)
                             
-                            Text("> Hard core programmer!\n> Some martial arts\n> Problem solver, even with math!➗\n> Animal lover, rides horses!")
+                            Text("> Hardcore programmer!\n> Some martial arts\n> Problem solver, even with math!➗\n> Animal lover, rides horses!")
                                 .font(.title3)
                                 .padding(.top, 10)
                             
                             Spacer()
-                            Rectangle()
-                                .frame(width: 300, height: 100)
-                                .mask(
-                                    Image("gitgit")
-                                        .resizable()
-                                        .scaledToFit()
-                                )
+                            Link(destination: URL(string: "https://github.com/Animatnetic")!, label: {
+                                Rectangle()
+                                    .frame(width: 300, height: 100)
+                                    .mask(
+                                        Image("gitgit")
+                                            .resizable()
+                                            .scaledToFit()
+                                    )
+                            })
                             
                             Spacer()
                             
