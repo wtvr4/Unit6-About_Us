@@ -1,21 +1,24 @@
-//
-//  ContentView.swift
-//  About Us
-//
-//  Created by Mohamed Badir on 02/07/2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            MohamedView()
+                .tabItem {
+                    Label("Mohamed", systemImage: "person")
+                }
+            
+            FarisView()
+                .tabItem {
+                    Label("Faris", systemImage: "person.circle.fill")
+                }
+            
+            OmarView()
+                .tabItem {
+                    Label("Omar", systemImage: "person.fill.turn.down")
+                }
         }
-        .padding()
+        .accentColor(.white)
     }
 }
 
