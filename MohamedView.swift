@@ -50,3 +50,9 @@ struct MohamedView: View {
         }
     }
 }
+
+struct MohamedView_Previews: PreviewProvider {
+    static var previews: some View {
+        MohamedView()
+    }
+}
