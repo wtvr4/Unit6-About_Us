@@ -3,7 +3,7 @@ import SwiftUI
 struct MohamedView: View {
     var body: some View {
         ZStack {
-            Color(red: 57/255, green: 80/255, blue: 82/255)
+            Color("Mohd's Colors")
                 .ignoresSafeArea()
             
             VStack(spacing: 20) {
