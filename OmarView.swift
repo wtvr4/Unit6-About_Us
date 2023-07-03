@@ -56,9 +56,5 @@ struct OmarView: View {
     }
     
     
-    struct OmarView_Previews: PreviewProvider {
-        static var previews: some View {
-            OmarView()
-        }
-    }
+ 
 }
