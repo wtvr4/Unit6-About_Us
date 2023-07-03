@@ -21,7 +21,7 @@ struct OmarView: View {
                                        .frame(width:200)
                                        .mask(Circle())
                 HStack{
-                    Text("Likes : \n- I love strength training.\n- I enjoy watching movies. \n- love playing simulation games \n and RGP games. \n- love animal keeping. ")
+                    Text("Likes : \n- I love strength training.\n- I enjoy watching movies. \n- love playing simulation games \n and RPG games. \n- love animal keeping. ")
                         .multilineTextAlignment(.leading)
                         .bold()
                         .font(.system(size: 25))
