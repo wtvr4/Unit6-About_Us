@@ -64,8 +64,4 @@ struct FarisView: View {
     }
 }
 
-struct FarisView_Previews: PreviewProvider {
-    static var previews: some View {
-        FarisView()
-    }
-}
+
