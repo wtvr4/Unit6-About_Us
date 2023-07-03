@@ -5,7 +5,7 @@ struct FarisView: View {
         ZStack {
             Color(red: 74/255, green: 85/255, blue: 162/255)
             
-            VStack(spacing: -10) {
+            VStack(spacing: -1) {
                 ZStack {
                     RadialGradient(colors: [Color(red: 160/255, green: 191/255, blue: 224/255), Color(red: 74/255, green: 85/255, blue: 162/255)], center: .center, startRadius: 0, endRadius: 190)
                     
@@ -42,6 +42,7 @@ struct FarisView: View {
                                 .padding(.top, 10)
                             
                             Spacer()
+                            
                             Link(destination: URL(string: "https://github.com/Animatnetic")!, label: {
                                 Rectangle()
                                     .frame(width: 300, height: 100)
@@ -51,7 +52,6 @@ struct FarisView: View {
                                             .scaledToFit()
                                     )
                             })
-                            
                             Spacer()
                             
                         }.foregroundColor(Color(red: 74/255, green: 85/255, blue: 162/255))
@@ -64,3 +64,8 @@ struct FarisView: View {
     }
 }
 
+struct FarisView_Previews: PreviewProvider {
+    static var previews: some View {
+        FarisView()
+    }
+}
