@@ -3,7 +3,7 @@ import SwiftUI
 struct MohamedView: View {
     var body: some View {
         ZStack {
-            Color("m1")
+            Color("m2")
                 .ignoresSafeArea()
             
             VStack(spacing: 20) {
@@ -11,7 +11,7 @@ struct MohamedView: View {
                     .multilineTextAlignment(.center)
                     .bold()
                     .font(.title)
-                    .foregroundColor(Color("m2"))
+                    .foregroundColor(Color("m4"))
                     .padding(.top)
                 
                 Image("cookie")
@@ -23,7 +23,7 @@ struct MohamedView: View {
                     Rectangle()
                         .frame(width: 350, height: 350)
                         .cornerRadius(20)
-                        .foregroundColor(Color("m4"))
+                        .foregroundColor(Color("m3"))
                         .offset(y : -50)
                     
                     HStack {
@@ -33,7 +33,7 @@ struct MohamedView: View {
                                     .system(.title)
                                     .weight(.bold)
                                 )
-                                .foregroundColor(Color("m1"))
+                                .foregroundColor(Color("m4"))
                                 .padding(.leading)
                                 .padding(.bottom)
                             
@@ -64,7 +64,7 @@ struct MohamedView: View {
                             Spacer()
                             Link(destination: URL(string: "https://github.com/wtvr4")!, label: {
                                 Rectangle()
-                                    .foregroundColor(Color("m2"))
+                                    .foregroundColor(Color("m4"))
                                     .frame(width: 300, height: 100)
                                     .mask(
                                         Image("gitgit")
