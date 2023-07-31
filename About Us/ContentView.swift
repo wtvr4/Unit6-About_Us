@@ -9,7 +9,7 @@ struct ContentView: View {
                 }
             
             FarisView()
-                .padding(.bottom, -40)
+                .padding(.bottom, -50)
                 .tabItem() {
                     Label("Faris", systemImage: "person.circle.fill")
                 }
